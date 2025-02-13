@@ -7,9 +7,7 @@ function selectOption(option) {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayMessage();
-            displaycmM();
-            displayTicket();
+            displaycmM(); // Display the cat-heart.gif
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
@@ -42,7 +40,6 @@ function flashRainbowColors(callback) {
     }, 2000); // Flash colors for 2 seconds
 }
 
-// Function to display the frog.gif initially
 function displayFrog() {
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
@@ -57,7 +54,7 @@ function displayFrog() {
     };
 }
 
-// Function to display the frog.gif initially
+// Function to display the cat-heart.gif
 function displayTicket() {
     // Get the container where the image will be displayed
     var imageContainer = document.getElementById('image-container');
@@ -89,11 +86,6 @@ function displaycmM() {
         document.getElementById('options').style.display = 'none';
     };
 }
-
-function displayMessage() {
-    document.getElementById('no-button').innerText = 'Hey Catherine, my 0.5 valentine, happy valentines day! All my feelings are in the letters that I wrote you, and they have only intensified since I got back. I think about our time in Shanghai everyday, and I miss it dearly. I only wish to have you here by my side, so that I can hold you in my arms and kiss you, and to tell you all my love for you. BTW, would you happen to be willing to go on an adventure with me to Guam? :)'; 
-}
-
 
 // Display the cat.gif initially
 displayFrog();
