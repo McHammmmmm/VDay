@@ -3,10 +3,10 @@
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
+    displayMessage();
     if (option === 'yes') {
         // Flash rainbow colors
         flashRainbowColors(function() {
-            displayMessage();
             document.getElementById('question').style.display = 'none'; // Hide the question
             displaycmM();
             displayTicket();
@@ -91,6 +91,7 @@ function displaycmM() {
 }
 
 function displayMessage() {
+    textBox = new te
     document.getElementById('no-button').innerText = 'Hey Catherine, my 0.5 valentine, happy valentines day! All my feelings are in the letters that I wrote you, and they have only intensified since I got back. I think about our time in Shanghai everyday, and I miss it dearly. I only wish to have you here by my side, so that I can hold you in my arms and kiss you, and to tell you all my love for you. BTW, would you happen to be willing to go on an adventure with me to Guam? :)'; 
 }
 
