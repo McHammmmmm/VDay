@@ -96,4 +96,4 @@ function displayMessage() {
 
 
 // Display the cat.gif initially
-displayCM();
+displayFrog();
