@@ -6,9 +6,9 @@ function selectOption(option) {
     if (option === 'yes') {
         // Flash rainbow colors
         flashRainbowColors(function() {
+            displayMessage();
             document.getElementById('question').style.display = 'none'; // Hide the question
             displaycmM();
-            displayMessage();
             displayTicket();
         });
     } else if (option === 'no') {
