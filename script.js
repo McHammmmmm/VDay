@@ -69,6 +69,7 @@ function displayTicket() {
     ticketImage.onload = function() {
         imageContainer.appendChild(ticketImage);
     };
+}
 
 function displayCM() {
     // Clear existing content in the image container
