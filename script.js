@@ -7,8 +7,8 @@ function selectOption(option) {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayFrog()
-            displayMessage()
+            displayCM();
+            displayMessage();
             displayTicket();
         });
     } else if (option === 'no') {
