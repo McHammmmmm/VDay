@@ -3,9 +3,9 @@
 // Function to handle button click events
 function selectOption(option) {
     // Check which option was clicked
+    displayMessage();
     if (option === 'yes') {
         // Flash rainbow colors
-        displayMessage();
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
             displaycmM();
