@@ -4,12 +4,12 @@
 function selectOption(option) {
     // Check which option was clicked
     displayMessage();
+    displaycmM();
+    displayTicket();
     if (option === 'yes') {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displaycmM();
-            displayTicket();
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
