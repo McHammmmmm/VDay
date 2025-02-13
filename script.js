@@ -7,7 +7,7 @@ function selectOption(option) {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayCM();
+            displaycmM();
             displayMessage();
             displayTicket();
         });
@@ -71,7 +71,7 @@ function displayTicket() {
     };
 }
 
-function displayCM() {
+function displaycmM() {
     // Clear existing content in the image container
     document.getElementById('image-container').innerHTML = '';
     // Get the container where the image will be displayed
@@ -79,9 +79,9 @@ function displayCM() {
     // Create a new Image element for the cat-heart
     var cMImage = new Image();
     // Set the source (file path) for the cat-heart image
-    cMImage.src = 'C&M.png'; // Assuming the cat-heart image is named "cat-heart.gif"
+    cMImage.src = 'cmM.png'; // Assuming the cat-heart image is named "cat-heart.gif"
     // Set alternative text for the image (for accessibility)
-    cMImage.alt = 'cM';
+    cMImage.alt = 'cmM';
     // When the cat-heart image is fully loaded, add it to the image container
     cMImage.onload = function() {
         imageContainer.appendChild(cMImage);
