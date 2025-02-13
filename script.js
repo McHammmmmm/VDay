@@ -2,14 +2,14 @@
 
 // Function to handle button click events
 function selectOption(option) {
-    displayMessage()
-    displayTicket()
     // Check which option was clicked
     if (option === 'yes') {
         // Flash rainbow colors
         flashRainbowColors(function() {
             document.getElementById('question').style.display = 'none'; // Hide the question
-            displayFrog();
+            displayFrog()
+            displayMessage()
+            displayTicket();
         });
     } else if (option === 'no') {
         // Change text on the "No" button to "You sure?"
